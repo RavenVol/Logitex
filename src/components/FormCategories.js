@@ -15,7 +15,11 @@ const FormCategories = ({categories, controlCategory, stage, setStage, history }
   stage !== 3 && setStage(3);
 
   return (
-    <form className="form">
+    <form className="form"
+      // action=""
+      // method="POST"
+      // encType="text/plain"
+    >
       <label className="form__label" htmlFor="category1">
         category 1
       </label>

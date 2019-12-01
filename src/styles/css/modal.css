@@ -69,7 +69,7 @@
   top: -5%;
   left: -15%;
   background-color: #5fb44180;
-  box-shadow: -2vw 2vw 7vw 0 #5fb44180;
+  box-shadow: -2vw 2vw 6vw 0 #5fb44180;
 }
 .logo::after {
   content: "";
@@ -79,7 +79,7 @@
   bottom: -5%;
   right: -15%;
   background-color: #f1559680;
-  box-shadow: -2vw 2vw 7vw 0 #f1559680;
+  box-shadow: -2vw 2vw 6vw 0 #f1559680;
 }
 .logo--rotate45 {
   transform: translate(-50%, -50%) rotateZ(45deg);
@@ -118,18 +118,18 @@
   top: 0;
   transform: translate(-50%, -50%);
   z-index: 1;
-  width: 10px;
-  height: 10px;
+  width: 0.7692307692vw;
+  height: 0.7692307692vw;
   box-sizing: border-box;
   border: 2px solid #e9e0db;
   border-radius: 50%;
   background-color: #bc8041;
 }
 .progressLine__point--completed {
-  width: 20px;
-  height: 20px;
+  width: 1.6vw;
+  height: 1.6vw;
   background-color: #fff;
-  box-shadow: inset 0 0 0 5px #bc8041;
+  box-shadow: inset 0 0 0 0.4vw #bc8041;
 }
 .progressLine__point--contacts {
   left: 0;
@@ -148,13 +148,13 @@
   left: 0;
   transform: translate(-50%, -50%);
   z-index: 2;
-  width: 30px;
-  height: 30px;
+  width: 2.4096385542vw;
+  height: 2.4096385542vw;
   box-sizing: border-box;
   border: 2px solid #e9e0db;
   border-radius: 50%;
   background-color: #fff;
-  box-shadow: inset 0 0 0 9px #bc8041;
+  box-shadow: inset 0 0 0 0.701754386vw #bc8041;
 }
 .progressLine__subscription {
   position: absolute;
@@ -225,6 +225,202 @@
   }
   100% {
     left: 100%;
+  }
+}
+@media screen and (max-width: 400px) {
+  .overlay__logoWrapper {
+    width: 90vw;
+    height: 90vw;
+  }
+
+  .formWindow {
+    padding: 10vw 0;
+    border-radius: 4vw;
+  }
+  .formWindow__formHeader {
+    width: 100vw;
+    height: 10vw;
+  }
+  .formWindow__main {
+    width: 40vw;
+    min-height: 40vw;
+  }
+  .formWindow__logoWrapper {
+    width: 100vw;
+    height: 100vw;
+  }
+
+  .logo::before {
+    box-shadow: -4vw 4vw 12vw 0 #5fb44180;
+  }
+  .logo::after {
+    box-shadow: -4vw 4vw 12vw 0 #f1559680;
+  }
+
+  .progressLine__point {
+    width: 1.5384615385vw;
+    height: 1.5384615385vw;
+  }
+  .progressLine__point--completed {
+    width: 3.2vw;
+    height: 3.2vw;
+    box-shadow: inset 0 0 0 0.8vw #bc8041;
+  }
+  .progressLine__marker {
+    width: 4.8192771084vw;
+    height: 4.8192771084vw;
+    box-shadow: inset 0 0 0 1.4035087719vw #bc8041;
+  }
+  .progressLine__subscription {
+    top: 4vw;
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 401px) and (max-width: 700px) {
+  .overlay__logoWrapper {
+    width: 76.5vw;
+    height: 76.5vw;
+  }
+
+  .formWindow {
+    padding: 8.5vw 0;
+    border-radius: 3.4vw;
+  }
+  .formWindow__formHeader {
+    width: 85vw;
+    height: 8.5vw;
+  }
+  .formWindow__main {
+    width: 34vw;
+    min-height: 34vw;
+  }
+  .formWindow__logoWrapper {
+    width: 85vw;
+    height: 85vw;
+  }
+
+  .logo::before {
+    box-shadow: -3.4vw 3.4vw 10.2vw 0 #5fb44180;
+  }
+  .logo::after {
+    box-shadow: -3.4vw 3.4vw 10.2vw 0 #f1559680;
+  }
+
+  .progressLine__point {
+    width: 1.3076923077vw;
+    height: 1.3076923077vw;
+  }
+  .progressLine__point--completed {
+    width: 2.72vw;
+    height: 2.72vw;
+    box-shadow: inset 0 0 0 0.68vw #bc8041;
+  }
+  .progressLine__marker {
+    width: 4.0963855422vw;
+    height: 4.0963855422vw;
+    box-shadow: inset 0 0 0 1.1929824561vw #bc8041;
+  }
+  .progressLine__subscription {
+    top: 3.4vw;
+    font-size: 1.7vw;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 1024px) {
+  .overlay__logoWrapper {
+    width: 63vw;
+    height: 63vw;
+  }
+
+  .formWindow {
+    padding: 7vw 0;
+    border-radius: 2.8vw;
+  }
+  .formWindow__formHeader {
+    width: 70vw;
+    height: 7vw;
+  }
+  .formWindow__main {
+    width: 28vw;
+    min-height: 28vw;
+  }
+  .formWindow__logoWrapper {
+    width: 70vw;
+    height: 70vw;
+  }
+
+  .logo::before {
+    box-shadow: -2.8vw 2.8vw 8.4vw 0 #5fb44180;
+  }
+  .logo::after {
+    box-shadow: -2.8vw 2.8vw 8.4vw 0 #f1559680;
+  }
+
+  .progressLine__point {
+    width: 1.0769230769vw;
+    height: 1.0769230769vw;
+  }
+  .progressLine__point--completed {
+    width: 2.24vw;
+    height: 2.24vw;
+    box-shadow: inset 0 0 0 0.56vw #bc8041;
+  }
+  .progressLine__marker {
+    width: 3.3734939759vw;
+    height: 3.3734939759vw;
+    box-shadow: inset 0 0 0 0.9824561404vw #bc8041;
+  }
+  .progressLine__subscription {
+    top: 2.8vw;
+    font-size: 1.4vw;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1280px) {
+  .overlay__logoWrapper {
+    width: 54vw;
+    height: 54vw;
+  }
+
+  .formWindow {
+    padding: 6vw 0;
+    border-radius: 2.4vw;
+  }
+  .formWindow__formHeader {
+    width: 60vw;
+    height: 6vw;
+  }
+  .formWindow__main {
+    width: 24vw;
+    min-height: 24vw;
+  }
+  .formWindow__logoWrapper {
+    width: 60vw;
+    height: 60vw;
+  }
+
+  .logo::before {
+    box-shadow: -2.4vw 2.4vw 7.2vw 0 #5fb44180;
+  }
+  .logo::after {
+    box-shadow: -2.4vw 2.4vw 7.2vw 0 #f1559680;
+  }
+
+  .progressLine__point {
+    width: 0.9230769231vw;
+    height: 0.9230769231vw;
+  }
+  .progressLine__point--completed {
+    width: 1.92vw;
+    height: 1.92vw;
+    box-shadow: inset 0 0 0 0.48vw #bc8041;
+  }
+  .progressLine__marker {
+    width: 2.8915662651vw;
+    height: 2.8915662651vw;
+    box-shadow: inset 0 0 0 0.8421052632vw #bc8041;
+  }
+  .progressLine__subscription {
+    top: 2.4vw;
+    font-size: 1.2vw;
   }
 }
 

@@ -8,7 +8,7 @@
   flex-direction: column;
 
   &__label {
-    font-size: 1.8vw;
+    font-size: $formSize / 11;
     color: $colorMainBrown;
     text-transform: lowercase;
     margin-bottom: 3%;
@@ -18,13 +18,19 @@
     }
   }
 
+  &__inputWrap {
+    position: relative;
+    box-sizing: content-box;
+  }
+
   &__input {
-    height: 2.4vw;
+    height: $formSize / 8.3;
+    width: 100%;
     margin-bottom: 3%;
     padding: 0 5px;
     box-sizing: border-box;
-    font-size: 1.5vw;
-    line-height: 2.4vw;
+    font-size: $formSize / 13.33;
+    line-height: $formSize / 8.3;
 
     border: 1px solid $colorMainBrown;
 
@@ -33,18 +39,27 @@
     }
   }
 
+  &__statusImg {
+    width: $formSize / 13.33;
+    height: $formSize / 13.33;
+    position: absolute;
+    top: 40%;
+    right: -$formSize / 11.76;
+    transform: translateY(-50%);
+  }
+
   &__selectWrap {
     position: relative;
 
     &:after {
       content: ">";
       position: absolute;
-      top: 0.3vw;
+      top: $formSize / 66.67;
       right: 0;
-      width: 1.8vw;
-      height: 1.8vw;
-      font-size: 1.6vw;
-      line-height: 1.8vw;
+      width: $formSize / 11.11;
+      height: $formSize / 11.11;
+      font-size: $formSize / 12.5;
+      line-height: $formSize / 11.11;
       box-sizing: border-box;
       text-align: center;
       transform: rotateZ(90deg);
@@ -58,11 +73,11 @@
   &__select {
     position: relative;
     width: 100%;
-    height: 2.4vw;
+    height: $formSize / 8.3;
 
     margin-bottom: 3%;
     box-sizing: border-box;
-    font-size: 1.5vw;
+    font-size: $formSize / 13.33;
     text-indent: 5px;
 
     background: none;
@@ -78,20 +93,196 @@
   &__button {
     margin-top: 7%;
     box-sizing: border-box;
-    font-size: 1.5vw;
-    line-height: 2.4vw;
+    font-size: $formSize / 13.33;
+    line-height: $formSize / 8.3;
 
     background-color: $colorMainBrown;
     border: none;
     color: $colorMainGrey;
 
-    &:focus {
+    transition: 500ms ease;
+
+    &:focus, &:hover {
       color: #fff;
       font-weight: bold;
     }
 
     &:disabled {
       cursor: not-allowed;
+      border: 1px solid $colorMainBrown;
+      background-color: #fff;
+      color: $colorMainBrown;
+
+      &:hover {
+        font-weight: initial;
+        color: $colorMainBrown;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .form {
+    &__label {
+      font-size: $formSize / 11 * 2;
+    }
+
+    &__input {
+      height: $formSize / 8.3 * 2;
+      font-size: $formSize / 13.33 * 2;
+      line-height: $formSize / 8.3 * 2;
+    }
+
+    &__statusImg {
+      width: $formSize / 13.33 * 2;
+      height: $formSize / 13.33 * 2;
+      right: -$formSize / 11.76 * 2;
+    }
+
+    &__selectWrap {
+      &:after {
+        top: $formSize / 66.67 * 2;
+        width: $formSize / 11.11 * 2;
+        height: $formSize / 11.11 * 2;
+        font-size: $formSize / 12.5 * 2;
+        line-height: $formSize / 11.11 * 2;
+      }
+    }
+
+    &__select {
+      height: $formSize / 8.3 * 2;
+      font-size: $formSize / 13.33 * 2;
+    }
+
+    &__button {
+      font-size: $formSize / 13.33 * 2;
+      line-height: $formSize / 8.3 * 2;
+    }
+  }
+}
+
+@media screen
+and (min-width: 401px)
+and (max-width: 700px) {
+  .form {
+    &__label {
+      font-size: $formSize / 11 * 1.7;
+    }
+
+    &__input {
+      height: $formSize / 8.3 * 1.7;
+      font-size: $formSize / 13.33 * 1.7;
+      line-height: $formSize / 8.3 * 1.7;
+    }
+
+    &__statusImg {
+      width: $formSize / 13.33 * 1.7;
+      height: $formSize / 13.33 * 1.7;
+      right: -$formSize / 11.76 * 1.7;
+    }
+
+    &__selectWrap {
+      &:after {
+        top: $formSize / 66.67 * 1.7;
+        width: $formSize / 11.11 * 1.7;
+        height: $formSize / 11.11 * 1.7;
+        font-size: $formSize / 12.5 * 1.7;
+        line-height: $formSize / 11.11 * 1.7;
+      }
+    }
+
+    &__select {
+      height: $formSize / 8.3 * 1.7;
+      font-size: $formSize / 13.33 * 1.7;
+    }
+
+    &__button {
+      font-size: $formSize / 13.33 * 1.7;
+      line-height: $formSize / 8.3 * 1.7;
+    }
+  }
+}
+
+@media screen
+and (min-width: 701px)
+and (max-width: 1024px) {
+  .form {
+    &__label {
+      font-size: $formSize / 11 * 1.4;
+    }
+
+    &__input {
+      height: $formSize / 8.3 * 1.4;
+      font-size: $formSize / 13.33 * 1.4;
+      line-height: $formSize / 8.3 * 1.4;
+    }
+
+    &__statusImg {
+      width: $formSize / 13.33 * 1.4;
+      height: $formSize / 13.33 * 1.4;
+      right: -$formSize / 11.76 * 1.4;
+    }
+
+    &__selectWrap {
+      &:after {
+        top: $formSize / 66.67 * 1.4;
+        width: $formSize / 11.11 * 1.4;
+        height: $formSize / 11.11 * 1.4;
+        font-size: $formSize / 12.5 * 1.4;
+        line-height: $formSize / 11.11 * 1.4;
+      }
+    }
+
+    &__select {
+      height: $formSize / 8.3 * 1.4;
+      font-size: $formSize / 13.33 * 1.4;
+    }
+
+    &__button {
+      font-size: $formSize / 13.33 * 1.4;
+      line-height: $formSize / 8.3 * 1.4;
+    }
+  }
+}
+
+@media screen
+and (min-width: 1025px)
+and (max-width: 1280px) {
+  .form {
+    &__label {
+      font-size: $formSize / 11 * 1.2;
+    }
+
+    &__input {
+      height: $formSize / 8.3 * 1.2;
+      font-size: $formSize / 13.33 * 1.2;
+      line-height: $formSize / 8.3 * 1.2;
+    }
+
+    &__statusImg {
+      width: $formSize / 13.33 * 1.2;
+      height: $formSize / 13.33 * 1.2;
+      right: -$formSize / 11.76 * 1.2;
+    }
+
+    &__selectWrap {
+      &:after {
+        top: $formSize / 66.67 * 1.2;
+        width: $formSize / 11.11 * 1.2;
+        height: $formSize / 11.11 * 1.2;
+        font-size: $formSize / 12.5 * 1.2;
+        line-height: $formSize / 11.11 * 1.2;
+      }
+    }
+
+    &__select {
+      height: $formSize / 8.3 * 1.2;
+      font-size: $formSize / 13.33 * 1.2;
+    }
+
+    &__button {
+      font-size: $formSize / 13.33 * 1.2;
+      line-height: $formSize / 8.3 * 1.2;
     }
   }
 }

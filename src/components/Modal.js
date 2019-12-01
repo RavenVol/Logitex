@@ -18,6 +18,8 @@ const Modal = ({formStage, children}) => {
       case "categories" :
         if ( formStage > 3 ) pointClassName = pointClassName + ' progressLine__point--completed';
         break;
+
+      default : break;
     }
 
     return pointClassName;
