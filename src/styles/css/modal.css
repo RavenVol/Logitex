@@ -13,6 +13,8 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 
@@ -21,7 +23,10 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 5vw 0;
   background-color: #fff;
@@ -45,11 +50,15 @@
 .formWindow__logoWrapper--left {
   top: 60%;
   left: 0;
+  -webkit-transform: translate(-50%, -50%) scale(0.33);
+  -ms-transform: translate(-50%, -50%) scale(0.33);
   transform: translate(-50%, -50%) scale(0.33);
 }
 .formWindow__logoWrapper--bottom {
   bottom: 2%;
   left: 90%;
+  -webkit-transform: translate(-50%, 50%) scale(0.33);
+  -ms-transform: translate(-50%, 50%) scale(0.33);
   transform: translate(-50%, 50%) scale(0.33);
 }
 
@@ -69,6 +78,7 @@
   top: -5%;
   left: -15%;
   background-color: #5fb44180;
+  -webkit-box-shadow: -2vw 2vw 6vw 0 #5fb44180;
   box-shadow: -2vw 2vw 6vw 0 #5fb44180;
 }
 .logo::after {
@@ -79,12 +89,17 @@
   bottom: -5%;
   right: -15%;
   background-color: #f1559680;
+  -webkit-box-shadow: -2vw 2vw 6vw 0 #f1559680;
   box-shadow: -2vw 2vw 6vw 0 #f1559680;
 }
 .logo--rotate45 {
+  -webkit-transform: translate(-50%, -50%) rotateZ(45deg);
+  -ms-transform: translate(-50%, -50%) rotate(45deg);
   transform: translate(-50%, -50%) rotateZ(45deg);
 }
 .logo--rotate315 {
+  -webkit-transform: translate(-50%, -50%) rotateZ(315deg);
+  -ms-transform: translate(-50%, -50%) rotate(315deg);
   transform: translate(-50%, -50%) rotateZ(315deg);
 }
 
@@ -97,6 +112,7 @@
 .formHeader__progressLine {
   width: 100%;
   height: 4px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid #e9e0db;
 }
@@ -106,6 +122,7 @@
   left: 0;
   width: 0;
   height: 4px;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid #bc8041;
 }
@@ -116,10 +133,13 @@
 .progressLine__point {
   position: absolute;
   top: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 1;
   width: 0.7692307692vw;
   height: 0.7692307692vw;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid #e9e0db;
   border-radius: 50%;
@@ -129,6 +149,7 @@
   width: 1.6vw;
   height: 1.6vw;
   background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 0.4vw #bc8041;
   box-shadow: inset 0 0 0 0.4vw #bc8041;
 }
 .progressLine__point--contacts {
@@ -146,18 +167,24 @@
 .progressLine__marker {
   position: absolute;
   left: 0;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   z-index: 2;
   width: 2.4096385542vw;
   height: 2.4096385542vw;
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   border: 2px solid #e9e0db;
   border-radius: 50%;
   background-color: #fff;
+  -webkit-box-shadow: inset 0 0 0 0.701754386vw #bc8041;
   box-shadow: inset 0 0 0 0.701754386vw #bc8041;
 }
 .progressLine__subscription {
   position: absolute;
+  -webkit-transform: translate(-50%, 0);
+  -ms-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   top: 2vw;
   font-size: 1vw;
@@ -179,12 +206,28 @@
   left: 100%;
 }
 
+@-webkit-keyframes doneLineToAddress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 33.3%;
+  }
+}
 @keyframes doneLineToAddress {
   0% {
     width: 0;
   }
   100% {
     width: 33.3%;
+  }
+}
+@-webkit-keyframes doneLineToCategories {
+  0% {
+    width: 33.3%;
+  }
+  100% {
+    width: 66.6%;
   }
 }
 @keyframes doneLineToCategories {
@@ -195,12 +238,28 @@
     width: 66.6%;
   }
 }
+@-webkit-keyframes doneLineToSuccess {
+  0% {
+    width: 66.6%;
+  }
+  100% {
+    width: 100%;
+  }
+}
 @keyframes doneLineToSuccess {
   0% {
     width: 66.6%;
   }
   100% {
     width: 100%;
+  }
+}
+@-webkit-keyframes markerToAddress {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 33.3%;
   }
 }
 @keyframes markerToAddress {
@@ -211,12 +270,28 @@
     left: 33.3%;
   }
 }
+@-webkit-keyframes markerToCategories {
+  0% {
+    left: 33.3%;
+  }
+  100% {
+    left: 66.6%;
+  }
+}
 @keyframes markerToCategories {
   0% {
     left: 33.3%;
   }
   100% {
     left: 66.6%;
+  }
+}
+@-webkit-keyframes markerToSuccess {
+  0% {
+    left: 66.6%;
+  }
+  100% {
+    left: 100%;
   }
 }
 @keyframes markerToSuccess {
@@ -251,9 +326,11 @@
   }
 
   .logo::before {
+    -webkit-box-shadow: -4vw 4vw 12vw 0 #5fb44180;
     box-shadow: -4vw 4vw 12vw 0 #5fb44180;
   }
   .logo::after {
+    -webkit-box-shadow: -4vw 4vw 12vw 0 #f1559680;
     box-shadow: -4vw 4vw 12vw 0 #f1559680;
   }
 
@@ -264,11 +341,13 @@
   .progressLine__point--completed {
     width: 3.2vw;
     height: 3.2vw;
+    -webkit-box-shadow: inset 0 0 0 0.8vw #bc8041;
     box-shadow: inset 0 0 0 0.8vw #bc8041;
   }
   .progressLine__marker {
     width: 4.8192771084vw;
     height: 4.8192771084vw;
+    -webkit-box-shadow: inset 0 0 0 1.4035087719vw #bc8041;
     box-shadow: inset 0 0 0 1.4035087719vw #bc8041;
   }
   .progressLine__subscription {
@@ -300,9 +379,11 @@
   }
 
   .logo::before {
+    -webkit-box-shadow: -3.4vw 3.4vw 10.2vw 0 #5fb44180;
     box-shadow: -3.4vw 3.4vw 10.2vw 0 #5fb44180;
   }
   .logo::after {
+    -webkit-box-shadow: -3.4vw 3.4vw 10.2vw 0 #f1559680;
     box-shadow: -3.4vw 3.4vw 10.2vw 0 #f1559680;
   }
 
@@ -313,11 +394,13 @@
   .progressLine__point--completed {
     width: 2.72vw;
     height: 2.72vw;
+    -webkit-box-shadow: inset 0 0 0 0.68vw #bc8041;
     box-shadow: inset 0 0 0 0.68vw #bc8041;
   }
   .progressLine__marker {
     width: 4.0963855422vw;
     height: 4.0963855422vw;
+    -webkit-box-shadow: inset 0 0 0 1.1929824561vw #bc8041;
     box-shadow: inset 0 0 0 1.1929824561vw #bc8041;
   }
   .progressLine__subscription {
@@ -349,9 +432,11 @@
   }
 
   .logo::before {
+    -webkit-box-shadow: -2.8vw 2.8vw 8.4vw 0 #5fb44180;
     box-shadow: -2.8vw 2.8vw 8.4vw 0 #5fb44180;
   }
   .logo::after {
+    -webkit-box-shadow: -2.8vw 2.8vw 8.4vw 0 #f1559680;
     box-shadow: -2.8vw 2.8vw 8.4vw 0 #f1559680;
   }
 
@@ -362,11 +447,13 @@
   .progressLine__point--completed {
     width: 2.24vw;
     height: 2.24vw;
+    -webkit-box-shadow: inset 0 0 0 0.56vw #bc8041;
     box-shadow: inset 0 0 0 0.56vw #bc8041;
   }
   .progressLine__marker {
     width: 3.3734939759vw;
     height: 3.3734939759vw;
+    -webkit-box-shadow: inset 0 0 0 0.9824561404vw #bc8041;
     box-shadow: inset 0 0 0 0.9824561404vw #bc8041;
   }
   .progressLine__subscription {
@@ -398,9 +485,11 @@
   }
 
   .logo::before {
+    -webkit-box-shadow: -2.4vw 2.4vw 7.2vw 0 #5fb44180;
     box-shadow: -2.4vw 2.4vw 7.2vw 0 #5fb44180;
   }
   .logo::after {
+    -webkit-box-shadow: -2.4vw 2.4vw 7.2vw 0 #f1559680;
     box-shadow: -2.4vw 2.4vw 7.2vw 0 #f1559680;
   }
 
@@ -411,11 +500,13 @@
   .progressLine__point--completed {
     width: 1.92vw;
     height: 1.92vw;
+    -webkit-box-shadow: inset 0 0 0 0.48vw #bc8041;
     box-shadow: inset 0 0 0 0.48vw #bc8041;
   }
   .progressLine__marker {
     width: 2.8915662651vw;
     height: 2.8915662651vw;
+    -webkit-box-shadow: inset 0 0 0 0.8421052632vw #bc8041;
     box-shadow: inset 0 0 0 0.8421052632vw #bc8041;
   }
   .progressLine__subscription {

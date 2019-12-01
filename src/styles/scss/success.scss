@@ -5,13 +5,24 @@
 
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 
   width: $formSize * 1.5;
 
+  display: -webkit-box;
+
+  display: -ms-flexbox;
+
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 
   &__header {
     margin-bottom: $formSize / 10;
@@ -37,6 +48,8 @@
     font-size: $formSize / 15.38;
     line-height: $formSize / 14.28;
     color: #555;
+    -webkit-transition: 500ms ease;
+    -o-transition: 500ms ease;
     transition: 500ms ease;
 
     &:hover {
@@ -46,7 +59,8 @@
 
   &__button {
     margin-top: 7%;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
     font-size: $formSize / 13.33;
     line-height: $formSize / 8.3;
 
@@ -209,4 +223,4 @@ and (max-width: 1280px) {
   .m15 {
     margin-top: $formSize / 13.33 * 1.2;
   }
-}
+} 
