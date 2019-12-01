@@ -1,0 +1,69 @@
+@import './variables.scss';
+
+.success {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 30vw;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    margin-bottom: 2vw;
+    font-size: 2.5vw;
+    font-weight: bold;
+    color: $colorMainBrown;
+  }
+
+  &__message {
+    font-size: 1.5vw;
+    line-height: 2vw;
+    font-weight: bold;
+    color: #777;
+  }
+
+  &__info {
+    font-size: 1.3vw;
+    line-height: 1.4vw;
+    color: #555;
+  }
+
+  &__link {
+    font-size: 1.3vw;
+    line-height: 1.4vw;
+    color: #555;
+    transition: 500ms ease;
+
+    &:hover {
+      color: $colorMainBrown;
+    }
+  }
+
+  &__button {
+    margin-top: 7%;
+    box-sizing: border-box;
+    font-size: 1.5vw;
+    line-height: 2.4vw;
+
+    background-color: $colorMainBrown;
+    border: none;
+    color: $colorMainGrey;
+
+    &:focus {
+      color: #fff;
+      font-weight: bold;
+    }
+  }
+}
+
+.m15 {
+  margin-top: 1.5vw;
+}
+
+
+

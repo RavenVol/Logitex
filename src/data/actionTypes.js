@@ -1,0 +1,21 @@
+export const ADD_STAGE = 'ADD_STAGE';
+export const SUBSTRACT_STAGE = 'SUBSTRACT_STAGE';
+export const SET_STAGE = 'SET_STAGE';
+
+export const CONTROL_MAIL = 'CONTROL_MAIL';
+export const CONTROL_PASS = 'CONTROL_PASS';
+export const CONTROL_CONFIRM = 'CONTROL_CONFIRM';
+
+export const CHECK_MAIL = 'CHECK_MAIL';
+export const CHECK_PASS = 'CHECK_PASS';
+export const CHECK_CONFIRM = 'CHECK_CONFIRM';
+
+export const CONTROL_COUNTRY = 'CONTROL_COUNTRY';
+export const CONTROL_CITY = 'CONTROL_CITY';
+export const CONTROL_ADDRESS = 'CONTROL_ADDRESS';
+
+export const CHECK_COUNTRY = 'CHECK_COUNTRY';
+export const CHECK_CITY = 'CHECK_CITY';
+export const CHECK_ADDRESS = 'CHECK_ADDRESS';
+
+export const CONTROL_CATEGORY = 'CONTROL_CATEGORY';
