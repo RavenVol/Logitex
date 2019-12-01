@@ -1,0 +1,44 @@
+{
+  "files": [
+    {
+      "input": "/home/raven/MyProjects/React/Pong/src/styles/app.css",
+      "output": "/home/raven/MyProjects/React/Pong/src/styles/app.dist.css"
+    }
+  ],
+  "support": {
+    "explorer": 11,
+    "edge": 18,
+    "firefox": 69,
+    "chrome": 76,
+    "safari": 12.1,
+    "opera": false,
+    "android": false,
+    "ios": 12.2
+  },
+  "plugins": [
+    "base64",
+    "bower-loader",
+    "calc",
+    "color",
+    "custom-media",
+    "custom-selector",
+    "extend",
+    "fixes",
+    "flex",
+    "font-variant",
+    "import",
+    "matches",
+    "media-queries",
+    "msfilter-background-alpha",
+    "msfilter-linear-gradient",
+    "msfilter-transform",
+    "nested-rules",
+    "npm-loader",
+    "prefixes",
+    "rem",
+    "variables",
+    "webkit-gradient"
+  ],
+  "code": "normal",
+  "map": "auto"
+}
