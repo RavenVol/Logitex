@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Logitex/static/css/main.6254e0c8.chunk.css",
+    "main.js": "/Logitex/static/js/main.ac245847.chunk.js",
+    "main.js.map": "/Logitex/static/js/main.ac245847.chunk.js.map",
+    "runtime~main.js": "/Logitex/static/js/runtime~main.2c6e21bb.js",
+    "runtime~main.js.map": "/Logitex/static/js/runtime~main.2c6e21bb.js.map",
+    "static/js/2.6379257e.chunk.js": "/Logitex/static/js/2.6379257e.chunk.js",
+    "static/js/2.6379257e.chunk.js.map": "/Logitex/static/js/2.6379257e.chunk.js.map",
+    "index.html": "/Logitex/index.html",
+    "precache-manifest.045910a05be8781a5c0689c6e2ea602f.js": "/Logitex/precache-manifest.045910a05be8781a5c0689c6e2ea602f.js",
+    "service-worker.js": "/Logitex/service-worker.js",
+    "static/css/main.6254e0c8.chunk.css.map": "/Logitex/static/css/main.6254e0c8.chunk.css.map"
+  }
+}
