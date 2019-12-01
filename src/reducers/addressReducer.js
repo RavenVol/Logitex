@@ -14,12 +14,12 @@ export default function addressReducer(state = initialState, action) {
   switch (action.type) {
 
     case types.CONTROL_COUNTRY:
-      let country = action.value.replace(/[^-\w\sА-Яа-яіїІЇєЄёЁ]/gi, '');
+      let country = action.value.replace(/[^-\sA-Za-zА-Яа-яіїІЇєЄёЁ]/gi, '');
       country = country ? country : "";
       return { ...state, country: country };
 
     case types.CONTROL_CITY:
-      let city = action.value.replace(/[^-\w\sА-Яа-яіїІЇєЄёЁ]/gi, '');
+      let city = action.value.replace(/[^-\sA-Za-zА-Яа-яіїІЇєЄёЁ]/gi, '');
       city = city ? city : "";
       return { ...state, city: city };
 

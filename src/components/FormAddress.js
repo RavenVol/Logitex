@@ -34,7 +34,7 @@ const FormAddress = ({postal, stage, setStage,
           value={country}
           autoFocus
           required
-          onChange={(event) => controlCountry(event.target.value)}
+          onChange={(event) => {controlCountry(event.target.value); checkCountry()}}
           onFocus={() => checkCountry(true)}
           onBlur={() => checkCountry()}
         />
@@ -57,7 +57,7 @@ const FormAddress = ({postal, stage, setStage,
           placeholder=""
           value={city}
           required
-          onChange={(event) => controlCity(event.target.value)}
+          onChange={(event) => {controlCity(event.target.value); checkCity()}}
           onFocus={() => checkCity(true)}
           onBlur={() => checkCity()}
         />
