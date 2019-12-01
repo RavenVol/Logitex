@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/Logitex/static/css/main.70f17e97.chunk.css",
-    "main.js": "/Logitex/static/js/main.eacecf2e.chunk.js",
-    "main.js.map": "/Logitex/static/js/main.eacecf2e.chunk.js.map",
+    "main.js": "/Logitex/static/js/main.14422eb6.chunk.js",
+    "main.js.map": "/Logitex/static/js/main.14422eb6.chunk.js.map",
     "runtime~main.js": "/Logitex/static/js/runtime~main.2c6e21bb.js",
     "runtime~main.js.map": "/Logitex/static/js/runtime~main.2c6e21bb.js.map",
     "static/js/2.6379257e.chunk.js": "/Logitex/static/js/2.6379257e.chunk.js",
     "static/js/2.6379257e.chunk.js.map": "/Logitex/static/js/2.6379257e.chunk.js.map",
     "index.html": "/Logitex/index.html",
-    "precache-manifest.7a87499032e5a33519c7722ac38c8f61.js": "/Logitex/precache-manifest.7a87499032e5a33519c7722ac38c8f61.js",
+    "precache-manifest.6da8415b2244a277f23b91108f54cf18.js": "/Logitex/precache-manifest.6da8415b2244a277f23b91108f54cf18.js",
     "service-worker.js": "/Logitex/service-worker.js",
     "static/css/main.70f17e97.chunk.css.map": "/Logitex/static/css/main.70f17e97.chunk.css.map"
   }
