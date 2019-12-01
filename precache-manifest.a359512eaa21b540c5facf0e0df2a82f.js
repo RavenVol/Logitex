@@ -1,18 +1,18 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "05362ce75760bcae72937ad2a41df3de",
+    "revision": "a7eb9964a516cb608e10adb8e94bc012",
     "url": "/Logitex/index.html"
   },
   {
-    "revision": "41dde0767478af2eeb46",
-    "url": "/Logitex/static/css/main.70f17e97.chunk.css"
+    "revision": "2511ccca8718e9d901fb",
+    "url": "/Logitex/static/css/main.3d61f298.chunk.css"
   },
   {
     "revision": "188069797842762fe8a9",
     "url": "/Logitex/static/js/2.6379257e.chunk.js"
   },
   {
-    "revision": "41dde0767478af2eeb46",
+    "revision": "2511ccca8718e9d901fb",
     "url": "/Logitex/static/js/main.14422eb6.chunk.js"
   },
   {
