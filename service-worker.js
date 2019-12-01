@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Logitex/precache-manifest.045910a05be8781a5c0689c6e2ea602f.js"
+  "/Logitex/precache-manifest.459382c104adf2308ad2703bb46e1b26.js"
 );
 
 self.addEventListener('message', (event) => {
